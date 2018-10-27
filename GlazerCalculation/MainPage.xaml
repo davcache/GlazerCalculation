@@ -9,6 +9,25 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <TextBlock x:Name="txbWidth" HorizontalAlignment="Left" Margin="346,83,0,0" Text="Width:" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock x:Name="txbHeight" HorizontalAlignment="Left" Margin="341,132,0,0" Text="Height:" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock x:Name="txbTint" HorizontalAlignment="Left" Margin="321,192,0,0" Text="Tint Color:" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock x:Name="txbQuantity" HorizontalAlignment="Left" Margin="329,255,0,0" Text="Quantity:" TextWrapping="Wrap" VerticalAlignment="Top"/>
 
+        <Button x:Name="btnCaluclate" Content="Calculate" HorizontalAlignment="Left" Margin="355,336,0,0" VerticalAlignment="Top" Click="btnCaluclate_Click"/>
+        <TextBlock x:Name="txbWoodLength" HorizontalAlignment="Left" Margin="279,413,0,0" Text="Length of Wood:" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="300,472,0,0" Text="Area of Glass:" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtWidth" HorizontalAlignment="Left" Margin="407,77,0,0" Text="" VerticalAlignment="Top" Height="26" Width="57"/>
+        <TextBox x:Name="txtHeight" HorizontalAlignment="Left" Margin="407,126,0,0" Text="" VerticalAlignment="Top"/>
+        <ComboBox x:Name="comTint" HorizontalAlignment="Left" Margin="407,186,0,0" VerticalAlignment="Top">
+            <ComboBoxItem Content="Black"/>
+            <ComboBoxItem Content="Brown"/>
+            <ComboBoxItem Content="Blue"/>
+        </ComboBox>
+        <TextBox x:Name="txtWoodLength" HorizontalAlignment="Left" Margin="404,407,0,0" Text="" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtGlass" HorizontalAlignment="Left" Margin="404,466,0,0" Text="" VerticalAlignment="Top"/>
+        <TextBlock x:Name="txbUpdateQuantity" HorizontalAlignment="Left" Margin="527,259,0,0" Text="Quantity" TextWrapping="Wrap" VerticalAlignment="Top" IsDoubleTapEnabled="False" IsHoldingEnabled="False" IsRightTapEnabled="False" IsTapEnabled="False" AutomationProperties.IsDataValidForForm="False" IsHitTestVisible="False"/>
+        <TextBlock x:Name="txbTitle" HorizontalAlignment="Left" Margin="305,10,0,0" Text="Glazer Calculator" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36"/>
+        <Slider x:Name="sldQuantity" HorizontalAlignment="Left" Margin="421,249,0,0" VerticalAlignment="Top" Maximum="100" Minimum="1" ValueChanged="sldQuantity_ValueChanged" Width="50"/>
     </Grid>
 </Page>
